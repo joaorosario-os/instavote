@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: vote
+    tier: front
   name: vote
 spec:
   replicas: 2
@@ -14,9 +15,9 @@ spec:
     metadata:
       labels:
         app: vote
+        tier: front
     spec:
       containers:
       - image: schoolofdevops/vote:v1
         name: vote
         resources: {}
-status: {}
