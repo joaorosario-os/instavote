@@ -12,5 +12,6 @@ spec:
       sourceRef:
         kind: GitRepository
         name: instavote
+        namespace: instavote
   interval: 10m0s
   targetNamespace: instavote
